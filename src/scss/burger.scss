@@ -1,7 +1,4 @@
 .nav-li {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 3px 8px;
-  border-radius: 20px;
   transition: color 0.2s ease-in-out;
   &:not(:last-child) {
     margin-right: 40px;
@@ -27,7 +24,7 @@
     justify-content: space-around;
     height: 400px;
     width: 100%;
-    z-index: 40;
+    z-index: 70;
     margin: 0;
     opacity: 0;
     overflow: hidden;
@@ -36,7 +33,7 @@
 }
 
 .nav-li:not(:last-child) {
-  margin-right: 36px;
+  margin-right: 40px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -46,12 +43,13 @@
 }
 
 .nav-li-a {
+  margin: 0;
   transition: color 0.3s ease-in-out;
   font-size: 20px;
   display: block;
   line-height: 27px;
   text-transform: uppercase;
-  color: #000;
+  color: rgb(255, 255, 255);
   padding: 4px 0;
   transition: all 0.1s ease-in-out;
   position: relative;
@@ -63,6 +61,14 @@
     height: 2px;
     width: 100%;
     background-color: #fff;
+  }
+
+  @media only screen and (max-width: 768px) {
+    color: #000;
+
+    &:hover {
+      color: #005140;
+    }
   }
 }
 
@@ -83,14 +89,14 @@
 .burger-span {
   display: block;
   cursor: pointer;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   margin-right: -10px;
 }
 
 .burger-line {
   width: 30px;
   height: 2px;
-  background: #000;
+  background: rgb(255, 255, 255);
   transition: 0.3s all;
 }
 
@@ -109,13 +115,13 @@
 
 #check-burger:checked ~ label .burger-span .burger-line.second-line {
   transform: rotate(45deg);
-  background: #ff6428;
+  background: #005140;
   height: 2px;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.third-line {
   transform: rotate(-45deg);
-  background: #ff6428;
+  background: #005140;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.fourth-line {

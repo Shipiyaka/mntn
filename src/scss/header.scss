@@ -1,0 +1,48 @@
+.header {
+  position: relative;
+  z-index: 10;
+  margin-top: 64px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      position: relative;
+      top: -2px;
+      margin-right: 8px;
+      width: 24px;
+      height: 24px;
+      background-image: url("@img/icons/account.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__text {
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__li {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+  }
+}

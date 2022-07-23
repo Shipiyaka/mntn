@@ -98,23 +98,12 @@ body {
   }
 }
 
-.btn {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 32px;
-  color: #100c46;
-  padding: 19px 46px;
-  background-color: #fff;
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
-  transition: all 0.2s ease-in-out;
-
-  &__text {
-    margin: 0;
-  }
+.link {
+  border-bottom: 2px solid transparent;
 
   &:hover {
-    color: #fff;
-    background-color: #100c46;
+    // text-decoration: underline;
+    // text-decoration-color: currentColor;
+    border-bottom: 2px solid currentColor;
   }
 }
